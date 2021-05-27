@@ -20,21 +20,21 @@
                 <p>Houston, we are ready when you are!</p>
             </div>
             <div id = "shuttleBackground" style = "position: relative;">
-                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
+                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket" style = "position: relative; left: '0px'; right: '0px'; top: '0px'; bottom: '0px';"/>
             </div>
             <div style = "text-align: center; display: inline-block;">
-                    <button>Up</button>
-                    <button>Down</button>
-                    <button>Right</button>
-                    <button>Left</button>
+                    <button onclick = "move('up')">Up</button>
+                    <button onclick = "move('down')">Down</button>
+                    <button onclick = "move('right')">Right</button>
+                    <button onclick = "move('left')">Left</button>
                     <h3>Space Shuttle Height</h3>
                     <p id="spaceShuttleHeight">0</p><p style = "display: inline-block;"> miles</p>
             </div>
         </div>
         <div style="text-align: center;">
-            <button id = "takeoff">Take off</button>
-            <button id = "landing">Land</button>
-            <button id = "missionAbort">Abort Mission</button>
+            <button id = "takeoff" onclick = takeOff()>Take off</button>
+            <button id = "landing" onclick = land()>Land</button>
+            <button id = "missionAbort" onclick = abort()>Abort Mission</button>
     </div>
     </body>
 </html>
